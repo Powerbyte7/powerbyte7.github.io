@@ -14,123 +14,124 @@ import "../base.css";
         <section id="software" class="mb-16">
             <div class="text-center mb-6">
                 <h2
-                    class="text-2xl font-extrabold text-white bg-gray-800 inline-block px-6 py-2 rounded-md"
+                    class="text-2xl font-extrabold text-white bg-gray-700 inline-block px-6 py-2 rounded-md"
                 >
                     SOFTWARE
                 </h2>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-[#11141C] p-6 rounded-lg">
-                    <h3 class="text-2xl font-semibold text-center mb-4">
-                        Seurat Capture
-                    </h3>
-                    <div class="flex justify-center mb-4">
-                        <img
-                            src="/icons/blender.svg"
-                            alt="Blender icon"
-                            class="w-8 h-8 mx-2"
-                        />
-                        <img
-                            src="/icons/python.svg"
-                            alt="Python icon"
-                            class="w-8 h-8 mx-2"
-                        />
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Seurat Capture Card -->
+                <div class="bg-[#11141C] p-6 rounded-lg flex flex-col">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-center m-1">
+                            Seurat Capture
+                        </h3>
+                        <div class="flex justify-center gap-2 mb-2">
+                            <span
+                                class="bg-gray-800 text-white px-2 py-1 rounded-lg text-xs"
+                                >Blender</span
+                            >
+                            <span
+                                class="bg-gray-800 text-white px-2 py-1 rounded-lg text-xs"
+                                >Python</span
+                            >
+                        </div>
                     </div>
-                    <p class="text-gray-400 mb-4">
-                        A Blender addon that helps optimize 3D scenes for VR
-                        with <a
+                    <p class="text-gray-400 mb-4 mx-1">
+                        A Blender addon that optimizes 3D scenes for VR using
+                        <a
                             href="https://github.com/googlevr/seurat"
                             class="text-blue-400 underline">Google Seurat</a
-                        >. It significantly reduces draw calls by optimizing
-                        meshes.
+                        >. It renders a scene from multiple angles and turns
+                        your scene into a single mesh.
                     </p>
                     <iframe
                         title="Seurat Capture Demo"
-                        class="w-full h-60 rounded-lg"
+                        class="w-full h-48 rounded-lg mt-auto"
                         src="https://www.youtube.com/embed/LnVr26j0Bqk"
                         allowfullscreen></iframe>
                 </div>
 
-                <div class="bg-[#11141C] p-6 rounded-lg">
-                    <h3 class="text-2xl font-semibold text-center mb-4">
-                        UVFX
-                    </h3>
-                    <div class="flex justify-center mb-4">
-                        <img
-                            src="/icons/blender.svg"
-                            alt="Blender icon"
-                            class="w-8 h-8 mx-2"
-                        />
-                        <img
-                            src="/icons/python.svg"
-                            alt="Python icon"
-                            class="w-8 h-8 mx-2"
-                        />
+                <!-- UVFX Card -->
+                <div class="bg-[#11141C] p-6 rounded-lg flex flex-col">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-center m-1">
+                            UVFX
+                        </h3>
+                        <div class="flex justify-center gap-2 mb-2">
+                            <span
+                                class="bg-gray-800 text-white px-2 py-1 rounded-lg text-xs"
+                                >Blender</span
+                            >
+                            <span
+                                class="bg-gray-800 text-white px-2 py-1 rounded-lg text-xs"
+                                >Python</span
+                            >
+                        </div>
                     </div>
-                    <p class="text-gray-400 mb-4">
+                    <p class="text-gray-400 mb-4 mx-1">
                         <a
                             href="https://github.com/Powerbyte7/UV_FX"
                             class="text-blue-400 underline">UVFX</a
-                        > converts 3D animations from Blender into reusable graphics
-                        templates for easy sharing. It's a flexible way to create animations with
-                        modifiable text or other content.
+                        > turns 3D renders from into reusable templates which render
+                        quickly and are easy to share, like animations with modifiable
+                        text, images or other content.
                     </p>
                     <Image
                         src={uvfx}
                         alt="UVFX example"
                         loading="eager"
-                        class="w-full h-60 rounded-lg object-cover"
+                        class="w-full h-48 rounded-lg object-cover mt-auto"
                     />
                 </div>
 
-                <div class="bg-[#11141C] p-6 rounded-lg">
-                    <h3 class="text-2xl font-semibold text-center mb-4">
-                        OpenCV Stitcher
-                    </h3>
-                    <div class="flex justify-center mb-4">
-                        <img
-                            src="/icons/python.svg"
-                            alt="Python icon"
-                            class="w-8 h-8 mx-2"
-                            loading="lazy"
-                        />
-                        <img
-                            src="/icons/cpp.svg"
-                            alt="C++ icon"
-                            class="w-8 h-8 mx-2"
-                            loading="lazy"
-                        />
+                <!-- OpenCV Stitcher Card -->
+                <div class="bg-[#11141C] p-6 rounded-lg flex flex-col">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-center m-1">
+                            OpenCV Stitcher
+                        </h3>
+                        <div class="flex justify-center gap-2 mb-2">
+                            <span
+                                class="bg-gray-800 text-white px-2 py-1 rounded-lg text-xs"
+                                >Python</span
+                            >
+                            <span
+                                class="bg-gray-800 text-white px-2 py-1 rounded-lg text-xs"
+                                >C++</span
+                            >
+                        </div>
                     </div>
-                    <p class="text-gray-400 mb-4">
-                        A cloud photo stitching software using OpenCV to make 2D
-                        maps of farm fields by blending photos together and
-                        outputting tiles for a Leaflet map viewer.
+                    <p class="text-gray-400 mb-4 mx-1">
+                        Cloud software using OpenCV to create 2D maps by
+                        blending photos, outputting tiles for Leaflet map
+                        viewers. Made for Farm Flow Innovations, interface is
+                        not mine.
                     </p>
                     <Image
                         src={stitcher}
                         alt="Stitcher example"
-                        class="w-full h-60 rounded-lg object-cover"
+                        class="w-full h-48 rounded-lg object-cover mt-auto"
                     />
                 </div>
 
-                <div class="bg-[#11141C] p-6 rounded-lg">
-                    <h3 class="text-2xl font-semibold text-center mb-4">
-                        Thankmas Donation Overlay
-                    </h3>
-                    <div class="flex justify-center mb-4">
-                        <img
-                            src="/icons/rust.svg"
-                            alt="Rust icon"
-                            class="w-8 h-8 mx-2"
-                            loading="lazy"
-                        />
-                        <img
-                            src="/icons/godot.svg"
-                            alt="Godot icon"
-                            class="w-8 h-8 mx-2"
-                            loading="lazy"
-                        />
+                <!-- Thankmas Donation Overlay Card -->
+                <div class="bg-[#11141C] p-6 rounded-lg flex flex-col">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-center m-1">
+                            Fundraiser Overlay
+                        </h3>
+                        <div class="flex justify-center gap-2 mb-2">
+                            <span
+                                class="bg-gray-800 text-white px-2 py-1 rounded-lg text-xs"
+                                >Rust</span
+                            >
+                            <span
+                                class="bg-gray-800 text-white px-2 py-1 rounded-lg text-xs"
+                                >Godot</span
+                            >
+                        </div>
                     </div>
                     <p class="text-gray-400 mb-4">
                         I coded a Tiltify donation overlay for the anual Hytale
@@ -141,111 +142,107 @@ import "../base.css";
                     <Image
                         src={thankmas}
                         alt="Thankmas overlay"
-                        class="w-full h-60 rounded-lg object-cover"
+                        class="w-full h-48 rounded-lg object-cover mt-auto"
                     />
                 </div>
 
-                <div class="bg-[#11141C] p-6 rounded-lg">
-                    <h3 class="text-2xl font-semibold text-center mb-4">
-                        HIDeous
-                    </h3>
-                    <div class="flex justify-center mb-4">
-                        <img
-                            src="/icons/c.svg"
-                            alt="C icon"
-                            class="w-8 h-8 mx-2"
-                            loading="lazy"
-                        />
+                <!-- HIDeous Card -->
+                <div class="bg-[#11141C] p-6 rounded-lg flex flex-col">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-center m-1">
+                            HIDeous
+                        </h3>
+                        <div class="flex justify-center gap-2 mb-2">
+                            <span
+                                class="bg-gray-800 text-white px-2 py-1 rounded-lg text-xs"
+                                >C</span
+                            >
+                        </div>
                     </div>
-                    <p class="text-gray-400 mb-4">
+                    <p class="text-gray-400 mb-4 mx-1">
                         I was curious about C programming and the USB protocol,
                         so I turned my graphic calculator into a keyboard,
                         because why not!
                     </p>
-                    <div class="flex justify-center gap-4">
-                        <iframe
-                            title="Possum Springs VR Showcase"
-                            loading="lazy"
-                            class="w-full h-60 rounded-lg"
-                            src="https://www.youtube.com/embed/ouwz9IaQheQ"
-                            allowfullscreen></iframe>
-                    </div>
+                    <iframe
+                        title="HIDeous Demo"
+                        class="w-full h-48 rounded-lg mt-auto"
+                        src="https://www.youtube.com/embed/ouwz9IaQheQ"
+                        allowfullscreen></iframe>
                 </div>
 
-                <div class="bg-[#11141C] p-6 rounded-lg">
-                    <h3 class="text-2xl font-semibold text-center mb-4">
-                        Ti-84 Plus CE Raycaster
-                    </h3>
-                    <div class="flex justify-center mb-4">
-                        <img
-                            src="/icons/c.svg"
-                            alt="C icon"
-                            class="w-8 h-8 mx-2"
-                            loading="lazy"
-                        />
+                <!-- Ti-84 Plus CE Raycaster Card -->
+                <div class="bg-[#11141C] p-6 rounded-lg flex flex-col">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-center m-1">
+                            Ti-84 Plus CE Raycaster
+                        </h3>
+                        <div class="flex justify-center gap-2 mb-2">
+                            <span
+                                class="bg-gray-800 text-white px-2 py-1 rounded-lg text-xs"
+                                >C</span
+                            >
+                        </div>
                     </div>
                     <p class="text-gray-400 mb-4">
                         I hadn't seen anyone make a raycaster for the Ti-84 Plus
                         CE yet, so I gave it a try. I used a lookup table to
                         substitute the slow built-in trigonometry functions.
                     </p>
-                    <div class="flex justify-center gap-4">
-                        <iframe
-                            title="Possum Springs VR Showcase"
-                            loading="lazy"
-                            class="w-full h-60 rounded-lg"
-                            src="https://www.youtube.com/embed/wBcSiD25ZHQ"
-                            allowfullscreen></iframe>
-                    </div>
+                    <iframe
+                        title="Raycaster Demo"
+                        class="w-full h-48 rounded-lg mt-auto"
+                        src="https://www.youtube.com/embed/wBcSiD25ZHQ"
+                        allowfullscreen></iframe>
                 </div>
 
-                <div class="bg-[#11141C] p-6 rounded-lg">
-                    <h3 class="text-2xl font-semibold text-center mb-4">
-                        Timespent
-                    </h3>
-                    <div class="flex justify-center mb-4">
-                        <img
-                            src="/icons/rust.svg"
-                            alt="Rust icon"
-                            class="w-8 h-8 mx-2"
-                            loading="lazy"
-                        />
+                <!-- Timespent Card -->
+                <div class="bg-[#11141C] p-6 rounded-lg flex flex-col">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-center m-1">
+                            Timespent
+                        </h3>
+                        <div class="flex justify-center gap-2 mb-2">
+                            <span
+                                class="bg-gray-800 text-white px-2 py-1 rounded-lg text-xs"
+                                >Rust</span
+                            >
+                        </div>
                     </div>
-                    <p class="text-gray-400 mb-4">
-                        This is a simple commandline tool I made myself to
-                        determine the number of hours spent on projects using
-                        file metadata. You specify a path, and an inactivity
-                        threshold in hours.
+                    <p class="text-gray-400 mb-4 mx-1">
+                        Command-line tool for calculating project hours based on
+                        file metadata, with customizable inactivity threshold.
                     </p>
                     <Image
                         src={timespent}
                         alt="Timespent output"
-                        class="w-full h-60 rounded-lg object-contain"
+                        class="w-full h-48 rounded-lg object-contain mt-auto"
                     />
                 </div>
 
-                <div class="bg-[#11141C] p-6 rounded-lg">
-                    <h3 class="text-2xl font-semibold text-center mb-4">
-                        QRshare
-                    </h3>
-                    <div class="flex justify-center mb-4">
-                        <img
-                            src="/icons/java.svg"
-                            alt="Java icon"
-                            class="w-8 h-8 mx-2"
-                            loading="lazy"
-                        />
+                <!-- QRshare Card -->
+                <div class="bg-[#11141C] p-6 rounded-lg flex flex-col">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-center m-1">
+                            QRshare
+                        </h3>
+                        <div class="flex justify-center gap-2 mb-2">
+                            <span
+                                class="bg-gray-800 text-white px-2 py-1 rounded-lg text-xs"
+                                >Java</span
+                            >
+                        </div>
                     </div>
                     <p class="text-gray-400 mb-4">
                         An Android app that generates QR codes from text
                         selections, making it easy to share links or text in
                         person.
                     </p>
-                    <div class="flex justify-center gap-4">
+                    <div class="flex justify-center">
                         <Image
                             src={qr_share}
                             alt="QR share screenshot"
-                            class="w-60 h-38 object-cover rounded-lg"
+                            class="w-48 h-56 rounded-lg object-cover mt-auto"
                         />
                     </div>
                 </div>
@@ -255,7 +252,7 @@ import "../base.css";
         <section id="3d" class="mb-16">
             <div class="text-center mb-6">
                 <h2
-                    class="text-2xl font-extrabold text-white bg-gray-800 inline-block px-6 py-2 rounded-md"
+                    class="text-2xl font-extrabold text-white bg-gray-700 inline-block px-6 py-2 rounded-md"
                 >
                     3D
                 </h2>
@@ -270,11 +267,7 @@ import "../base.css";
                         A full recreation of Possum Springs from Night in the
                         Woods as a VRchat world. Everything in the world was
                         made from scratch and optimized to run on limited mobile
-                        chipsets. For performance optimization I used vertex
-                        colors combined with a texture atlas, merged meshes to
-                        limit draw calls, and utilized backface culling to add
-                        leaves within the trees. The world has been visited 23K+
-                        times.
+                        chipsets.
                     </p>
                     <iframe
                         title="Possum Springs VR Showcase"
@@ -292,9 +285,7 @@ import "../base.css";
                         A project aimed at recreating Hytale's 2D and 3D assets
                         for fanart. It includes 128 textures recreated from
                         sceenshots and rigged characters which are featured in
-                        various projects of mine and others. The assets were
-                        made made to be compatible with Blender, Blockbench,
-                        CraftStudio and Mine-imator.
+                        various projects of mine and others.
                     </p>
                     <iframe
                         title="HyAssets showcase"
