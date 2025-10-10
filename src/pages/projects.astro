@@ -6,6 +6,7 @@ import thankmas from "../../public/projects/thankmas.png";
 import timespent from "../../public/projects/timespent.png";
 import uvfx from "../../public/projects/uvfx.png";
 import qr_share from "../../public/projects/qr_share.jpg";
+import tis100 from "../../public/projects/tis100.png";
 import "../base.css";
 ---
 
@@ -24,10 +25,17 @@ import "../base.css";
                 <!-- Seurat Capture Card -->
                 <div class="bg-[#11141C] p-6 rounded-lg flex flex-col">
                     <div class="flex justify-between items-center">
-                        <h3 class="text-xl font-semibold text-center m-1">
-                            Seurat Capture
-                        </h3>
-                        <div class="flex justify-center gap-2 mb-2">
+                        <a
+                            class="flex justify-between items-center mx-1"
+                            href="https://github.com/Powerbyte7/seurat_capture_addon"
+                            target="_blank"
+                        >
+                            <img src="/icons/hyperlink.svg" />
+                            <h3 class="text-xl font-semibold text-center m-1">
+                                Seurat Capture
+                            </h3>
+                        </a>
+                        <div class="flex justify-center gap-2">
                             <span
                                 class="bg-gray-800 text-white px-2 py-1 rounded-lg text-xs"
                                 >Blender</span
@@ -39,12 +47,14 @@ import "../base.css";
                         </div>
                     </div>
                     <p class="text-gray-400 mb-4 mx-1">
-                        A Blender addon that optimizes 3D scenes for VR using
+                        I got tired of baking lightmaps, so I wrote a Blender
+                        addon that optimizes 3D scenes for VR using
                         <a
                             href="https://github.com/googlevr/seurat"
                             class="text-blue-400 underline">Google Seurat</a
-                        >. It renders a scene from multiple angles and turns
-                        your scene into a single mesh.
+                        >. The addon renders scenes from multiple angles and
+                        turns them scene into a single mesh. It does a great job
+                        at eliminating draw calls with minimal effort.
                     </p>
                     <iframe
                         title="Seurat Capture Demo"
@@ -56,10 +66,17 @@ import "../base.css";
                 <!-- UVFX Card -->
                 <div class="bg-[#11141C] p-6 rounded-lg flex flex-col">
                     <div class="flex justify-between items-center">
-                        <h3 class="text-xl font-semibold text-center m-1">
-                            UVFX
-                        </h3>
-                        <div class="flex justify-center gap-2 mb-2">
+                        <a
+                            class="flex justify-between items-center mx-1"
+                            href="https://github.com/Powerbyte7/UV_FX"
+                            target="_blank"
+                        >
+                            <img src="/icons/hyperlink.svg" />
+                            <h3 class="text-xl font-semibold text-center m-1">
+                                UVFX
+                            </h3>
+                        </a>
+                        <div class="flex justify-center gap-2">
                             <span
                                 class="bg-gray-800 text-white px-2 py-1 rounded-lg text-xs"
                                 >Blender</span
@@ -71,12 +88,11 @@ import "../base.css";
                         </div>
                     </div>
                     <p class="text-gray-400 mb-4 mx-1">
-                        <a
-                            href="https://github.com/Powerbyte7/UV_FX"
-                            class="text-blue-400 underline">UVFX</a
-                        > turns 3D renders from into reusable templates which render
-                        quickly and are easy to share, like animations with modifiable
-                        text, images or other content.
+                        UVFX lets you replace textures within a 3D animation
+                        without having to re-render them. It works by rendering
+                        everything in layers and compositing them back together.
+                        Because this is really fast, people without a dedicated
+                        GPU can re-render UVFX templates/files too.
                     </p>
                     <Image
                         src={uvfx}
@@ -89,10 +105,84 @@ import "../base.css";
                 <!-- OpenCV Stitcher Card -->
                 <div class="bg-[#11141C] p-6 rounded-lg flex flex-col">
                     <div class="flex justify-between items-center">
+                        <a
+                            class="flex justify-between items-center mx-1"
+                            href="https://github.com/Powerbyte7/TIS-100-FPGA/blob/main/TIS-100-FPGA-Report.pdf"
+                            target="_blank"
+                        >
+                            <img src="/icons/hyperlink.svg" />
+                            <h3 class="text-xl font-semibold text-center m-1">
+                                TIS-100 on an FPGA
+                            </h3>
+                        </a>
+                        <div class="flex justify-center gap-2">
+                            <span
+                                class="bg-gray-800 text-white px-2 py-1 rounded-lg text-xs"
+                                >VHDL</span
+                            >
+                            <span
+                                class="bg-gray-800 text-white px-2 py-1 rounded-lg text-xs"
+                                >C</span
+                            >
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-4 mx-1">
+                        For the final assingment of my Embedded Systems minor, I
+                        decided to make a recreation of the imaginary TIS-100
+                        system in VHDL. I also wrote a custom assembler in C to
+                        encode and decode instructions.
+                    </p>
+                    <Image
+                        src={tis100}
+                        alt="TIS 100"
+                        class="w-full h-48 rounded-lg object-cover mt-auto"
+                    />
+                </div>
+
+                <!-- OpenCV Stitcher Card -->
+                <div class="bg-[#11141C] p-6 rounded-lg flex flex-col">
+                    <div class="flex justify-between items-center">
+                        <a
+                            class="flex justify-between items-center mx-1"
+                            href="https://github.com/Powerbyte7/vhdl-stacker"
+                            target="_blank"
+                        >
+                            <img src="/icons/hyperlink.svg" />
+                            <h3 class="text-xl font-semibold text-center m-1">
+                                VHDL Stacker
+                            </h3>
+                        </a>
+                        <div class="flex justify-center gap-2">
+                            <span
+                                class="bg-gray-800 text-white px-2 py-1 rounded-lg text-xs"
+                                >VHDL</span
+                            >
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-4 mx-1">
+                        During my Embedded Systems minor, I was instructed to
+                        make a project in pure VHDL. I decided to make a game
+                        inspired by
+                        <a
+                            href="https://en.wikipedia.org/wiki/Stacker_(arcade_game)"
+                            class="text-blue-400 underline">Stacker</a
+                        >, where you have to push a button to align increasingly
+                        fast moving blocks.
+                    </p>
+                    <iframe
+                        title="VHDL Stacker Demo"
+                        class="w-full h-48 rounded-lg mt-auto"
+                        src="https://www.youtube.com/embed/a43PlZGpLBo"
+                        allowfullscreen></iframe>
+                </div>
+
+                <!-- OpenCV Stitcher Card -->
+                <div class="bg-[#11141C] p-6 rounded-lg flex flex-col">
+                    <div class="flex justify-between items-center">
                         <h3 class="text-xl font-semibold text-center m-1">
                             OpenCV Stitcher
                         </h3>
-                        <div class="flex justify-center gap-2 mb-2">
+                        <div class="flex justify-center gap-2">
                             <span
                                 class="bg-gray-800 text-white px-2 py-1 rounded-lg text-xs"
                                 >Python</span
@@ -122,7 +212,7 @@ import "../base.css";
                         <h3 class="text-xl font-semibold text-center m-1">
                             Fundraiser Overlay
                         </h3>
-                        <div class="flex justify-center gap-2 mb-2">
+                        <div class="flex justify-center gap-2">
                             <span
                                 class="bg-gray-800 text-white px-2 py-1 rounded-lg text-xs"
                                 >Rust</span
@@ -149,10 +239,17 @@ import "../base.css";
                 <!-- HIDeous Card -->
                 <div class="bg-[#11141C] p-6 rounded-lg flex flex-col">
                     <div class="flex justify-between items-center">
-                        <h3 class="text-xl font-semibold text-center m-1">
-                            HIDeous
-                        </h3>
-                        <div class="flex justify-center gap-2 mb-2">
+                        <a
+                            class="flex justify-between items-center mx-1"
+                            href="https://github.com/Powerbyte7/HIDeous"
+                            target="_blank"
+                        >
+                            <img src="/icons/hyperlink.svg" />
+                            <h3 class="text-xl font-semibold text-center m-1">
+                                HIDeous
+                            </h3>
+                        </a>
+                        <div class="flex justify-center gap-2">
                             <span
                                 class="bg-gray-800 text-white px-2 py-1 rounded-lg text-xs"
                                 >C</span
@@ -160,9 +257,9 @@ import "../base.css";
                         </div>
                     </div>
                     <p class="text-gray-400 mb-4 mx-1">
-                        I was curious about C programming and the USB protocol,
-                        so I turned my graphic calculator into a keyboard,
-                        because why not!
+                        I was curious about C programming and the USB (HID)
+                        protocol, so I turned my graphic calculator into a
+                        keyboard, because why not!
                     </p>
                     <iframe
                         title="HIDeous Demo"
@@ -174,10 +271,17 @@ import "../base.css";
                 <!-- Ti-84 Plus CE Raycaster Card -->
                 <div class="bg-[#11141C] p-6 rounded-lg flex flex-col">
                     <div class="flex justify-between items-center">
-                        <h3 class="text-xl font-semibold text-center m-1">
-                            Ti-84 Plus CE Raycaster
-                        </h3>
-                        <div class="flex justify-center gap-2 mb-2">
+                        <a
+                            class="flex justify-between items-center mx-1"
+                            href="https://github.com/Powerbyte7/Ti-84-Raycaster"
+                            target="_blank"
+                        >
+                            <img src="/icons/hyperlink.svg" />
+                            <h3 class="text-xl font-semibold text-center m-1">
+                                Ti-84 Plus CE Raycaster
+                            </h3>
+                        </a>
+                        <div class="flex justify-center gap-2">
                             <span
                                 class="bg-gray-800 text-white px-2 py-1 rounded-lg text-xs"
                                 >C</span
@@ -199,10 +303,17 @@ import "../base.css";
                 <!-- Timespent Card -->
                 <div class="bg-[#11141C] p-6 rounded-lg flex flex-col">
                     <div class="flex justify-between items-center">
-                        <h3 class="text-xl font-semibold text-center m-1">
-                            Timespent
-                        </h3>
-                        <div class="flex justify-center gap-2 mb-2">
+                        <a
+                            class="flex justify-between items-center mx-1"
+                            href="https://github.com/Powerbyte7/Timespent"
+                            target="_blank"
+                        >
+                            <img src="/icons/hyperlink.svg" />
+                            <h3 class="text-xl font-semibold text-center m-1">
+                                Timespent
+                            </h3>
+                        </a>
+                        <div class="flex justify-center gap-2">
                             <span
                                 class="bg-gray-800 text-white px-2 py-1 rounded-lg text-xs"
                                 >Rust</span
@@ -210,8 +321,10 @@ import "../base.css";
                         </div>
                     </div>
                     <p class="text-gray-400 mb-4 mx-1">
-                        Command-line tool for calculating project hours based on
-                        file metadata, with customizable inactivity threshold.
+                        I wanted an easy way to track the number of hours I've
+                        spent on my 3D commissions, so I wrote my own
+                        command-line tool to calculate project hours based on
+                        file metadata, with a configurable inactivity threshold.
                     </p>
                     <Image
                         src={timespent}
@@ -223,10 +336,13 @@ import "../base.css";
                 <!-- QRshare Card -->
                 <div class="bg-[#11141C] p-6 rounded-lg flex flex-col">
                     <div class="flex justify-between items-center">
+                        <!-- <a class="flex justify-between items-center mx-1" href="https://github.com/Powerbyte7/QRshare" target="_blank">
+                            <img src="/icons/hyperlink.svg">
+                        </a> -->
                         <h3 class="text-xl font-semibold text-center m-1">
                             QRshare
                         </h3>
-                        <div class="flex justify-center gap-2 mb-2">
+                        <div class="flex justify-center gap-2">
                             <span
                                 class="bg-gray-800 text-white px-2 py-1 rounded-lg text-xs"
                                 >Java</span
@@ -235,8 +351,8 @@ import "../base.css";
                     </div>
                     <p class="text-gray-400 mb-4">
                         An Android app that generates QR codes from text
-                        selections, making it easy to share links or text in
-                        person.
+                        selections, making it much more convenient to share
+                        links or text in person.
                     </p>
                     <div class="flex justify-center">
                         <Image
