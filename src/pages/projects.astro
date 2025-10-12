@@ -53,7 +53,7 @@ import "../base.css";
                             href="https://github.com/googlevr/seurat"
                             class="text-blue-400 underline">Google Seurat</a
                         >. The addon renders scenes from multiple angles and
-                        turns them scene into a single mesh. It does a great job
+                        turns them into a single mesh. It does a great job
                         at eliminating draw calls with minimal effort.
                     </p>
                     <iframe
@@ -174,66 +174,6 @@ import "../base.css";
                         class="w-full h-48 rounded-lg mt-auto"
                         src="https://www.youtube.com/embed/a43PlZGpLBo"
                         allowfullscreen></iframe>
-                </div>
-
-                <!-- OpenCV Stitcher Card -->
-                <div class="dark:bg-[#11141C] outline outline-3 outline-gray-400 dark:outline-none bg-gray-200 p-6 rounded-lg flex flex-col">
-                    <div class="flex justify-between items-center">
-                        <h3 class="text-xl text-current font-semibold text-center m-1">
-                            OpenCV Stitcher
-                        </h3>
-                        <div class="flex justify-center gap-2">
-                            <span
-                                class="bg-gray-800 text-white px-2 py-1 rounded-lg text-xs"
-                                >Python</span
-                            >
-                            <span
-                                class="bg-gray-800 text-white px-2 py-1 rounded-lg text-xs"
-                                >C++</span
-                            >
-                        </div>
-                    </div>
-                    <p class="text-gray-800 dark:text-gray-400 mb-4 mx-1">
-                        Cloud software using OpenCV to create 2D maps by
-                        blending photos, outputting tiles for Leaflet map
-                        viewers. Made for Farm Flow Innovations, interface is
-                        not mine.
-                    </p>
-                    <Image
-                        src={stitcher}
-                        alt="Stitcher example"
-                        class="w-full h-48 rounded-lg object-cover mt-auto"
-                    />
-                </div>
-
-                <!-- Thankmas Donation Overlay Card -->
-                <div class="dark:bg-[#11141C] outline outline-3 outline-gray-400 dark:outline-none bg-gray-200 p-6 rounded-lg flex flex-col">
-                    <div class="flex justify-between items-center">
-                        <h3 class="text-xl text-current font-semibold text-center m-1">
-                            Fundraiser Overlay
-                        </h3>
-                        <div class="flex justify-center gap-2">
-                            <span
-                                class="bg-gray-800 text-white px-2 py-1 rounded-lg text-xs"
-                                >Rust</span
-                            >
-                            <span
-                                class="bg-gray-800 text-white px-2 py-1 rounded-lg text-xs"
-                                >Godot</span
-                            >
-                        </div>
-                    </div>
-                    <p class="text-gray-800 dark:text-gray-400 mb-4">
-                        I coded a Tiltify donation overlay for the anual Hytale
-                        Thankmas charity livestream. It uses Tiltify's Webhooks
-                        to get the latest campaign data and sends updated
-                        donation info to clients over Websocket.
-                    </p>
-                    <Image
-                        src={thankmas}
-                        alt="Thankmas overlay"
-                        class="w-full h-48 rounded-lg object-cover mt-auto"
-                    />
                 </div>
 
                 <!-- HIDeous Card -->
@@ -362,6 +302,67 @@ import "../base.css";
                         />
                     </div>
                 </div>
+                
+                <!-- OpenCV Stitcher Card -->
+                <div class="dark:bg-[#11141C] outline outline-3 outline-gray-400 dark:outline-none bg-gray-200 p-6 rounded-lg flex flex-col">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl text-current font-semibold text-center m-1">
+                            OpenCV Stitcher
+                        </h3>
+                        <div class="flex justify-center gap-2">
+                            <span
+                                class="bg-gray-800 text-white px-2 py-1 rounded-lg text-xs"
+                                >Python</span
+                            >
+                            <span
+                                class="bg-gray-800 text-white px-2 py-1 rounded-lg text-xs"
+                                >C++</span
+                            >
+                        </div>
+                    </div>
+                    <p class="text-gray-800 dark:text-gray-400 mb-4 mx-1">
+                        Cloud software using OpenCV to create 2D maps by
+                        blending photos, outputting tiles for Leaflet map
+                        viewers. Made for Farm Flow Innovations, interface is
+                        not mine.
+                    </p>
+                    <Image
+                        src={stitcher}
+                        alt="Stitcher example"
+                        class="w-full h-48 rounded-lg object-cover mt-auto"
+                    />
+                </div>
+
+                <!-- Thankmas Donation Overlay Card -->
+                <div class="dark:bg-[#11141C] outline outline-3 outline-gray-400 dark:outline-none bg-gray-200 p-6 rounded-lg flex flex-col">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl text-current font-semibold text-center m-1">
+                            Fundraiser Overlay
+                        </h3>
+                        <div class="flex justify-center gap-2">
+                            <span
+                                class="bg-gray-800 text-white px-2 py-1 rounded-lg text-xs"
+                                >Rust</span
+                            >
+                            <span
+                                class="bg-gray-800 text-white px-2 py-1 rounded-lg text-xs"
+                                >Godot</span
+                            >
+                        </div>
+                    </div>
+                    <p class="text-gray-800 dark:text-gray-400 mb-4">
+                        I coded a Tiltify donation overlay for the anual Hytale
+                        Thankmas charity livestream. It uses Tiltify's Webhooks
+                        to get the latest campaign data and sends updated
+                        donation info to clients over Websocket.
+                    </p>
+                    <Image
+                        src={thankmas}
+                        alt="Thankmas overlay"
+                        class="w-full h-48 rounded-lg object-cover mt-auto"
+                    />
+                </div>
+
             </div>
         </section>
 
